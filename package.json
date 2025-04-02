@@ -33,8 +33,10 @@
   "dependencies": {
     "@apollo/server": "^4.3.0",
     "@commitspark/git-adapter": "^0.13.0",
-    "@graphql-tools/mock": "^8.6.8",
-    "@graphql-tools/schema": "^8.3.10"
+    "@graphql-tools/mock": "^9.0.0",
+    "@graphql-tools/schema": "^9.0.0",
+    "@graphql-tools/utils": "^9.0.0",
+    "graphql": "^16.10.0"
   },
   "devDependencies": {
     "@types/jest": "^29.5.2",
@@ -50,6 +52,6 @@
     "ts-jest": "^29.1.0",
     "ts-loader": "^9.2.6",
     "ts-node": "^10.3.0",
-    "typescript": "^4.4.4"
+    "typescript": "^5.8.2"
   }
 }

@@ -1,8 +1,13 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "module": "esnext",
-    "outDir": "./dist/esm"
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "outDir": "./dist/esm",
+    "declaration": true,
+    "sourceMap": true
   },
   "exclude": ["node_modules", "dist", "tests"]
 }

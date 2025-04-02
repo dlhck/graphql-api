@@ -3,10 +3,10 @@ import { SchemaGeneratorService } from '../graphql/schema-generator.service'
 import { GraphQLFormattedError } from 'graphql'
 import { GitAdapter } from '@commitspark/git-adapter'
 import { ApolloServer, ApolloServerOptions } from '@apollo/server'
-import { VariableValues } from '@apollo/server/src/externalTypes/graphql'
-import { GraphQLRequest } from '@apollo/server/src/externalTypes'
+import { GraphQLRequest } from '@apollo/server'
 import { DocumentNode, TypedQueryDocumentNode } from 'graphql/index'
 
+type VariableValues = { [name: string]: any }
 export class ApiService {
   constructor(
     private readonly apolloConfigFactory: ApolloConfigFactoryService,
